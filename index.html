@@ -6,19 +6,23 @@
     <title>HTML template</title>
   </head>
   <body>
-    <header>This is Login website</header>
+    <header>This is Login Page</header>
     <br />
     <br />
     <br />
     <section>
-      <form action="myloginhandle.asp" method="post">
+      <form action="myloginhandle.asp" method="get">
+        <!-- get will show the url params but post not-->
         <label for="username">User Name:</label>
         <input type="text" name="username" value="" />
+        <br />
+        <br />
         <label for="password">Password:</label>
         <input type="password" name="password" value="" />
         <br />
         <br />
-        <input type="submit" value="Submit" >
+        <input type="submit" value="Submit" />
+        <a href="/register.html">Register</a>
       </form>
     </section>
     <br />
