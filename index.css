@@ -1,9 +1,42 @@
 body {
-    background-color: "#FFFFFF";
-  }
-  .content {
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid '#000';
-    background-color: rgb(173, 173, 173);
-  }
+  background-color: "#FFFFFF";
+}
+.blogItem {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid "#000";
+  background-color: rgb(173, 173, 173);
+}
+img {
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #444;
+  text-align: center;
+}
+nav li {
+  float: left;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #393434;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  padding: 4px;
+  font-weight: bold;
+  width: 120px;
+}
+nav a:hover,
+a:active {
+  background-color: #009bff;
+}
