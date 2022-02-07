@@ -25,18 +25,38 @@ function countDisplay() {
 
 //countDisplay();
 
+var isPrint = false;
+//var isPrint;
 
-var isPrint= false;
-
-if(isPrint)
-{
-    document.getElementById('writeCondition').innerHTML= "We are not allowed to print"
+if (isPrint) {
+  document.getElementById("writeCondition").innerHTML =
+    "We are not allowed to print";
+} else if (isPrint == undefined) {
+  document.getElementById("writeCondition").innerHTML = "Something is Wrong";
+} else {
+  document.getElementById("writeCondition").innerHTML =
+    "We are allowed to print";
 }
-else
-{
-    document.getElementById('writeCondition').innerHTML= "We are allowed to print"
+
+isPrint
+  ? (document.getElementById("writeCondition").innerHTML =
+      "We are not allowed to print Turnury")
+  : (document.getElementById("writeConditionTurnury").innerHTML =
+      "We are allowed to print Turnury");
+
+//var caseNo = 0;
+//var caseNo = 1;
+var caseNo = 7;
+
+
+switch (caseNo) {
+  case 0:
+    document.getElementById("writeSwitch").innerHTML = "We are allowed to print Switch :" + caseNo;
+    break;
+  case 1:
+    document.getElementById("writeSwitch").innerHTML = "We are allowed to print Switch :" + caseNo;
+    break;
+  default:
+    document.getElementById("writeSwitch").innerHTML ="We are allowed to print Switch : Default";
+    break;
 }
-
-(isPrint)?document.getElementById('writeCondition').innerHTML= "We are not allowed to print Turnury":
-    document.getElementById('writeConditionTurnury').innerHTML= "We are allowed to print Turnury"
-
