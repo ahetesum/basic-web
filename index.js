@@ -24,3 +24,19 @@ function countDisplay() {
 }
 
 //countDisplay();
+
+
+var isPrint= false;
+
+if(isPrint)
+{
+    document.getElementById('writeCondition').innerHTML= "We are not allowed to print"
+}
+else
+{
+    document.getElementById('writeCondition').innerHTML= "We are allowed to print"
+}
+
+(isPrint)?document.getElementById('writeCondition').innerHTML= "We are not allowed to print Turnury":
+    document.getElementById('writeConditionTurnury').innerHTML= "We are allowed to print Turnury"
+
