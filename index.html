@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Hello HTML5</title>
+    <title>Hello HTML5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./js/list.js"></script>
   </head>
   <body>
-    <h1>Hello HTML5</h1>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="jumbotron">
+          <h1>Cars For Sale</h1>
+        </div>
+      </div>
+      <div class="row">
+        <table id="carsTable" class="table table-bordered">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Model</th>
+              <th>Company</th>
+              <th>Date</th>
+              <th>Price</th>
+              <th>
+                Action
+                <button type="button" onclick="createCar()" class="btn-xs btn-success">Add</button>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
