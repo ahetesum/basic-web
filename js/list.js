@@ -2,9 +2,14 @@
 fetch('../assets/cars.json') 
 .then(response => response.json())
 .then(jsonCars =>{
-    console.log(jsonCars);
-    localStorage.setItem('CAR_LIST',JSON.stringify(jsonCars));
-
+    if(localStorage.key('CAR_LIST'))
+    {
+        jsonCars=JSON.parse(localStorage.getItem('CAR_LIST')); 
+    }
+    else{
+        console.log('Loaded......');
+        localStorage.setItem('CAR_LIST',JSON.stringify(jsonCars)); 
+    }
     let initPosition=1;
     var table = document.getElementById("carsTable");
     for(let car of jsonCars)
@@ -15,9 +20,9 @@ fetch('../assets/cars.json')
         row.insertCell(2).innerHTML= car.category;
         row.insertCell(3).innerHTML= car.manufacture;
         row.insertCell(4).innerHTML= car.price;
-        row.insertCell(5).innerHTML='<div class="btn-group"><button type="button" onclick="editCar('+car.id+')" class="btn-xs btn-warning">Edit</button><button type="button" onClick="deleteCar('+car.id+')" class="btn-xs btn-danger">Delete</button></div>';
+        row.insertCell(5).innerHTML='<div class="btn-group"><button type="button" onclick="editCar('+car.id+')" class="btn-xs btn-warning">Edit</button><button type="button" class="btn-xs btn-danger" data-toggle="modal" data-target="#myModal">Delete</button></div>';
         initPosition++;
-    }  
+    } 
 } );
 
 function createCar()
