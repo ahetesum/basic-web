@@ -1,0 +1,114 @@
+@font-face { font-family: roboto-regular; src: url('./assets/fonts/roboto/Roboto-BoldItalic.ttf'); } 
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #444;
+  text-align: center;
+}
+nav li {
+  float: left;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #393434;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  padding: 4px;
+  font-weight: bold;
+  width: 120px;
+}
+nav a:hover,
+a:active {
+  background-color: #009bff;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  overflow: hidden;
+  background-color: #444;
+}
+
+footer p {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+body {
+  background-color: #dedede;
+}
+
+.aboutMeContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  height: auto;
+  margin-top: 10px;
+}
+.profileDiv {
+  flex: 1;
+  text-align: center;
+  background-color: #FFF;
+  margin-right: 10px;
+
+}
+.contentDiv{
+    flex: 2;
+    background-color: #FFF;
+    margin-left: 10px;
+
+}
+
+.profImg{
+    height: 250px;
+    width: 250px;
+    margin-top: 100px;
+    border: #DEDEDE solid 15px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.textContainer{
+    margin: 20px;
+}
+
+.aboutMeDiv{
+    margin: 20px;
+}
+
+td
+{
+    width: 180px;
+    font-size: x-large;
+    font-family: roboto-regular;
+}
+
+table
+{
+    margin: 20px;
+}
+
+
+.fontStyle
+{
+  position: absolute;
+  top: 490px;
+  left: 120px;
+  color: #073757;
+  font-size:60px;
+}
+  

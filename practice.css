@@ -1,0 +1,66 @@
+body {
+  background-color: "#FFFFFF";
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #444;
+  text-align: center;
+}
+
+nav li {
+  float: left;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #393434;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  padding: 4px;
+  font-weight: bold;
+  width: 120px;
+}
+
+nav a:hover,
+a:active {
+  background-color: #009bff;
+}
+
+img{
+    width: 100%;
+}
+
+.blogItem {
+    padding: 2%;
+    margin: 20px;
+    border: 1px solid "#000";
+    background-color: rgb(211, 210, 210);
+  }
+
+
+footer {
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  overflow: hidden;
+  background-color: #444;
+}
+
+footer p {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: bold;
+}

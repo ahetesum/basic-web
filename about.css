@@ -1,0 +1,86 @@
+body{
+    background-color: #DEDEDE;
+}
+.aboutContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.itemContainer{
+    margin: 40px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 420px;
+}
+
+.profileDiv{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.imgProfile{
+    border-radius: 200px;
+    border: #FFFFFF solid 10px;
+}
+
+.imgAbout{
+    margin: 10px;
+}
+
+.textContainer{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444;
+    text-align: center;
+  }
+  nav li {
+    float: left;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+      sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #393434;
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    padding: 4px;
+    font-weight: bold;
+    width: 120px;
+  }
+  nav a:hover,
+  a:active {
+    background-color: #009bff;
+  }
+  
+  footer {
+          margin: 0;
+      padding: 0;
+      height: 60px;
+      overflow: hidden;
+      background-color: #444;
+  }
+  
+  footer p{
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      text-transform: uppercase;
+      padding-left: 20px;
+      font-weight: bold;
+  }
+  
