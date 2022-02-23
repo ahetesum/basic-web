@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="./fruits.css" />
+    <script src="./fruits.html"></script>
+  </head>
+  <body>
+    <h1>CRUD FRUITS in JavaScript</h1>
+    <div id="conatiner">
+    <div class="addForm">
+      <h3>Add Inventory</h3>
+      <input type="text" placeholder="Enter Fruit Name" id="name" />
+      <br />
+      <input type="number" placeholder="Enter Fruit Price" id="price" />
+      <br />
+      <select id="origin">
+        <option value="IN">India</option>
+        <option value="TH">Thailand</option>
+        <option value="SA">Saudi Arab</option>
+        <option value="USA">America</option>
+      </select>
+      <br />
+
+      <input type="number" placeholder="Enter Fruit Quantity" id="qty" />
+      <br />
+
+      <input type="button" value="Add" id="add" onclick="addFruit()" />
+      <br />
+    </div>
+    <div  class="addForm">
+      <table id="fruitTable">
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Origin</th>
+          <th>Quantity</th>
+          <th>Total Price</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>30</td>
+          <td>India</td>
+          <td>500</td>
+          <td>15000</td>
+          <td><a>Edit</a><a>Delete</a></td>
+
+        </tr>
+      </table>
+    </div>
+  </div>
+  </body>
+</html>
