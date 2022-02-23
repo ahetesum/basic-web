@@ -1,9 +1,9 @@
 
 
-function displayNumber(num)
+function displayNumber(content)
 {
   var calString= document.getElementById('calc').value;
-  document.getElementById('calc').value=calString+num;
+  document.getElementById('calc').value=calString+content;
   console.log(calString);
   //if(calString)
   
