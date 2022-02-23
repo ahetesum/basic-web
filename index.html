@@ -11,33 +11,33 @@
       <input id="calc" type="text" name="answer" /> <br />
       <br />
 
-      <input type="button" value="1" id="one" onclick="oneClicked()"  />
-      <input type="button" value="2" id="two" onclick="twoClicked()" />
-      <input type="button" value="3" onclick="" />
-      <input type="button" value="+" onclick="" />
+      <input type="button" value="1" id="one" onclick="displayNumber(1)"  />
+      <input type="button" value="2" id="two" onclick="displayNumber(2)" />
+      <input type="button" value="3" onclick="displayNumber(3)" />
+      <input type="button" value="+" onclick="displayNumber('+')" />
       <br />
       <br />
 
-      <input type="button" value="4" onclick="" />
-      <input type="button" value="5" onclick="" />
-      <input type="button" value="6" onclick="" />
-      <input type="button" value="-" onclick="" />
+      <input type="button" value="4" onclick="displayNumber(4)" />
+      <input type="button" value="5" onclick="displayNumber(5)" />
+      <input type="button" value="6" onclick="displayNumber(6)" />
+      <input type="button" value="-" onclick="displayNumber('-')" />
       <br />
       <br />
 
-      <input type="button" value="7" onclick="" />
-      <input type="button" value="8" onclick="" />
-      <input type="button" value="9" onclick=" " />
-      <input type="button" value="*" onclick="" />
+      <input type="button" value="7" onclick="displayNumber(7)" />
+      <input type="button" value="8" onclick="displayNumber(8)" />
+      <input type="button" value="9" onclick="displayNumber(9)" />
+      <input type="button" value="*" onclick="displayNumber('*')" />
       <br />
       <br />
 
-      <input type="button" value="/" onclick="" />
-      <input type="button" value="0" onclick="" />
-      <input type="button" value="." onclick="" />
-      <input type="button" value="=" onclick="" />
+      <input type="button" value="/" onclick="displayNumber('/')" />
+      <input type="button" value="0" onclick="displayNumber(0)" />
+      <input type="button" value="." onclick="('.')" />
+      <input type="button" value="=" onclick="onCalculate()" />
       <br />
-      <input type="button" value="Clear All" onclick="" id="clear" />
+      <input type="button" value="Clear All" onclick="onClear()" id="clear" />
       <br />
     </div>
   </body>
