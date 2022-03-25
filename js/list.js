@@ -18,7 +18,7 @@ fetch("../assets/cars.json")
       row.insertCell(3).innerHTML = car.manufacture;
       row.insertCell(4).innerHTML = car.price;
       row.insertCell(5).innerHTML =
-        '<b<div class="btn-group"><button type="button" onclick="editCar(' +
+        '<div class="btn-group"><button type="button" onclick="editCar(' +
         car.id +
         ')" class="btn-xs btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i></button><button type="button" onclick="deleteCar(' +
         car.id +
